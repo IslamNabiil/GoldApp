@@ -1,0 +1,121 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+}
+.project{
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+    text-align: -webkit-center;
+}
+.li, .lii, .liii {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.li input, .li select,.lii input,.lii select , .liii input , small {
+    width: 32%;
+    align-self: center;
+}
+
+.inputs{
+    margin: 30px 0;
+}
+input, select, button {
+    width: 100%;
+    outline: none;
+    border: none;
+    height: 30px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+h1,#totalWeight{
+    margin: 20px 0;
+}
+#notes {
+    height: 70px;
+    padding: 0px 10px;
+    font-size: 20px;
+}
+button{
+    background-color: blueviolet;
+    font-size: 15px;
+    transition: .8s;
+    height: 35px;
+}
+button:hover{
+    letter-spacing: 5px;
+    background-color: rgb(112, 36, 184);
+    cursor: pointer;
+}
+#backup {
+    background-color: darkorange;
+    color: white;
+    font-size: 15px;
+    transition: .5s;
+    height: 35px;
+}
+#backup:hover {
+    background-color: orangered;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+#restore {
+    background-color: darkgreen;
+    color: white;
+    font-size: 15px;
+    transition: .5s;
+    height: 35px;
+}
+#restore:hover {
+    background-color: green;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+#totalWeight::before{
+    content: "الوزن المتاح : ";
+}
+#totalCost::before{
+    content: "التكلفه الاجماليه : ";
+}
+#expensess::before{
+    content: "المصنعيه : ";
+}
+table {
+    width: 100%;
+    text-align: center;
+}
+tr{
+    height: 30px;
+}
+td button{
+    background-color: rgba(255, 0, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: .5s;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    font-size: larger;
+}
+.shorcutInformation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+}
+#goldPrice::before{
+    content: "سعر الذهب : ";
+}
+#goldValue::before{
+    content: "قيمه الذهب : ";
+}

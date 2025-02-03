@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>دهبـــــي</title>
+
+    <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome" href="/css/app-wa-69936a1b279f3a9001400679f162b44b.css?vsn=d">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-thin.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-light.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-thin.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-light.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-thin.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-light.css">
+
+</head>
+<body>
+    <div class="project">
+        <h1>دهــــــــــــــــب</h1>
+        <div class="shorcutInformation">
+            <small id="goldPrice"></small>
+            <small id="totalWeight">0</small>
+            <small id="goldValue"></small>  <!-- لعرض قيمة الذهب بناءً على الوزن -->
+        </div>
+        <div class="inputs">
+            <div class="li">
+                <input type="date" id="date">
+                <select id="type">
+                    <option value="شراء">شراء</option>
+                    <option value="بيع">بيع</option>
+                </select>
+                <input type="number" id="kind" placeholder="العيار">
+            </div>
+            <div class="liii">
+                <input onkeyup="getTotal()" type="number" id="weight" placeholder="الوزن">
+                <input onkeyup="getTotal()" type="number" id="price" placeholder="السعر">
+                <small id="totalCost"></small>
+            </div>
+            <div class="lii">
+                <input onkeyup="total()" type="number" id="paied" placeholder="المدفوع">
+                <small id="expensess"></small>
+                <select id="health">
+                    <option value="جديد">جديد</option>
+                    <option value="مستعمل">مستعمل</option>
+                </select>
+            </div>
+            <input type="text" id="notes" placeholder="الملاحظات">
+            <button type="submit" id="submit">Submit</button>
+            <button type="button" id="backup">Backup</button>
+            <button type="button" id="restore">Restore Data</button>
+        </div>
+        <table>
+            <tr>
+                <th>م</th>
+                <th>التاريخ</th>
+                <th>نوع المعامله</th>
+                <th>العيار</th>
+                <th>الوزن</th>
+                <th>السعر</th>
+                <th>القيمه</th>
+                <th>المصنعيه</th>
+                <th>المدفوع</th>
+                <th>الحاله</th>
+                <th>ملاحظات</th>
+                <th colspan="2">الحاله</th>
+            </tr>
+            <tbody id="tbody">
+                
+            </tbody>
+        </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
